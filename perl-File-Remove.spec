@@ -22,7 +22,7 @@ File::Remove usuwa pliki i katalogi.
 %setup -q -n File-Remove%{version}
 
 %build
-perl Makefile.PL
+%{__perl} Makefile.PL
 %{__make}
 
 %install
