@@ -1,6 +1,6 @@
 %include	/usr/lib/rpm/macros.perl
-Summary:	File-Remove perl module
-Summary(pl):	Modu³ perla File-Remove
+Summary:	File::Remove perl module
+Summary(pl):	Modu³ perla File::Remove
 Name:		perl-File-Remove
 Version:	0.20
 Release:	7
@@ -13,10 +13,10 @@ BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
-File-Remove removes files and directories.
+File::Remove removes files and directories.
 
 %description -l pl
-File-Remove usuwa pliki i katalogi.
+File::Remove usuwa pliki i katalogi.
 
 %prep
 %setup -q -n File-Remove%{version}
