@@ -3,12 +3,13 @@ Summary:	File::Remove perl module
 Summary(pl):	Modu³ perla File::Remove
 Name:		perl-File-Remove
 Version:	0.20
-Release:	7
+Release:	8
 License:	GPL
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/File/File-Remove%{version}.tar.gz
-BuildRequires:	rpm-perlprov >= 4.0.2-104
+# Source0-md5:	11514a468dbdde199c611389ec13f269
 BuildRequires:	perl >= 5.6.1
+BuildRequires:	rpm-perlprov >= 4.0.2-104
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
@@ -28,7 +29,8 @@ File::Remove usuwa pliki i katalogi.
 %install
 rm -rf $RPM_BUILD_ROOT
 
-%{__make} install DESTDIR=$RPM_BUILD_ROOT
+%{__make} install \
+	DESTDIR=$RPM_BUILD_ROOT
 
 %clean
 rm -rf $RPM_BUILD_ROOT
