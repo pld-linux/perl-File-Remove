@@ -24,7 +24,7 @@ File::Remove usuwa pliki i katalogi.
 
 %build
 %{__perl} Makefile.PL \
-	INSTALLDIRS=vendor 
+	INSTALLDIRS=vendor
 %{__make}
 
 %install
