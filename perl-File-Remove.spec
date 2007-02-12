@@ -1,6 +1,6 @@
 %include	/usr/lib/rpm/macros.perl
 Summary:	File::Remove - remove files and directories
-Summary(pl):	File::Remove - usuwanie plików i katalogów
+Summary(pl.UTF-8):   File::Remove - usuwanie plikÃ³w i katalogÃ³w
 Name:		perl-File-Remove
 Version:	0.33
 Release:	1
@@ -20,11 +20,11 @@ most part.  Although unlink can be given a list of files it will not
 remove directories.  This module remedies that.  It also accepts
 wildcards, * and ?, as arguments for filenames.
 
-%description -l pl
-File::Remove usuwa pliki i katalogi. Dzia³a w zasadzie jak rm.
-Jednak¿e, funkcji unlink mo¿na przekazaæ tylko listê plików, nie usuwa
-ona katalogów. Ten modu³ ma na to lekarstwo. Akceptuje równie¿
-metaznaki: * i ? jako argumenty dla nazw plików.
+%description -l pl.UTF-8
+File::Remove usuwa pliki i katalogi. DziaÅ‚a w zasadzie jak rm.
+JednakÅ¼e, funkcji unlink moÅ¼na przekazaÄ‡ tylko listÄ™ plikÃ³w, nie usuwa
+ona katalogÃ³w. Ten moduÅ‚ ma na to lekarstwo. Akceptuje rÃ³wnieÅ¼
+metaznaki: * i ? jako argumenty dla nazw plikÃ³w.
 
 %prep
 %setup -q -n File-Remove-%{version}
