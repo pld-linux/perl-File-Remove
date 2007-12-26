@@ -2,13 +2,14 @@
 Summary:	File::Remove - remove files and directories
 Summary(pl.UTF-8):	File::Remove - usuwanie plików i katalogów
 Name:		perl-File-Remove
-Version:	0.38
+Version:	0.39
 Release:	1
 # same as perl
 License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/File/File-Remove-%{version}.tar.gz
-# Source0-md5:	e6a078ad3348db60de44fe637d6abff2
+# Source0-md5:	8a25d37cc652e67654b9cb4b0fbc87c6
+URL:		http://search.cpan.org/dist/File-Remove/
 BuildRequires:	perl-devel >= 1:5.8.0
 BuildRequires:	rpm-perlprov >= 4.1-13
 BuildArch:	noarch
