@@ -1,0 +1,13 @@
+--- File-Remove-1.46/lib/File/Remove.pm.orig	2011-02-18 04:31:02.000000000 +0100
++++ File-Remove-1.46/lib/File/Remove.pm	2011-02-23 19:48:35.066973392 +0100
+@@ -16,8 +16,8 @@
+ 
+ use File::Path ();
+ use File::Glob ();
+-use File::Spec 3.2701 ();
+-use Cwd        3.2701 ();
++use File::Spec 3.27_01 ();
++use Cwd        3.27_01 ();
+ 
+ sub expand (@) {
+ 	map { -e $_ ? $_ : File::Glob::bsd_glob($_) } @_;

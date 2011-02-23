@@ -2,14 +2,16 @@
 Summary:	File::Remove - remove files and directories
 Summary(pl.UTF-8):	File::Remove - usuwanie plików i katalogów
 Name:		perl-File-Remove
-Version:	1.42
+Version:	1.46
 Release:	1
 # same as perl
 License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
-Source0:	http://www.cpan.org/modules/by-module/File/File-Remove-%{version}.tar.gz
-# Source0-md5:	7eef25044fc3cc60b6faf0522f865ed5
+Source0:	http://www.cpan.org/modules/by-module/File/ADAMK/File-Remove-%{version}.tar.gz
+# Source0-md5:	030117a86d31db5f3c77c351d3664d59
+Patch0:		%{name}-ver.patch
 URL:		http://search.cpan.org/dist/File-Remove/
+BuildRequires:	perl-Test-Simple >= 0.42
 BuildRequires:	perl-devel >= 1:5.8.0
 BuildRequires:	rpm-perlprov >= 4.1-13
 BuildArch:	noarch
@@ -29,6 +31,7 @@ metaznaki: * i ? jako argumenty dla nazw plików.
 
 %prep
 %setup -q -n File-Remove-%{version}
+%patch0 -p1
 
 %build
 %{__perl} Makefile.PL \
@@ -38,7 +41,7 @@ metaznaki: * i ? jako argumenty dla nazw plików.
 %install
 rm -rf $RPM_BUILD_ROOT
 
-%{__make} install \
+%{__make} pure_install \
 	DESTDIR=$RPM_BUILD_ROOT
 
 %clean
@@ -48,4 +51,4 @@ rm -rf $RPM_BUILD_ROOT
 %defattr(644,root,root,755)
 %doc Changes README
 %{perl_vendorlib}/File/Remove.pm
-%{_mandir}/man3/*
+%{_mandir}/man3/File::Remove.3pm*
