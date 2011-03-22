@@ -2,13 +2,13 @@
 Summary:	File::Remove - remove files and directories
 Summary(pl.UTF-8):	File::Remove - usuwanie plików i katalogów
 Name:		perl-File-Remove
-Version:	1.46
+Version:	1.49
 Release:	1
 # same as perl
 License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/File/ADAMK/File-Remove-%{version}.tar.gz
-# Source0-md5:	030117a86d31db5f3c77c351d3664d59
+# Source0-md5:	2a415ddbfaaaf8e94d842339ba1af196
 Patch0:		%{name}-ver.patch
 URL:		http://search.cpan.org/dist/File-Remove/
 BuildRequires:	perl-Test-Simple >= 0.42
@@ -19,8 +19,8 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
 File::Remove removes files and directories. It acts like rm for the
-most part.  Although unlink can be given a list of files it will not
-remove directories.  This module remedies that.  It also accepts
+most part. Although unlink can be given a list of files it will not
+remove directories. This module remedies that. It also accepts
 wildcards, * and ?, as arguments for filenames.
 
 %description -l pl.UTF-8
