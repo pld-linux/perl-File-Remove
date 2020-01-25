@@ -1,4 +1,3 @@
-%include	/usr/lib/rpm/macros.perl
 Summary:	File::Remove - remove files and directories
 Summary(pl.UTF-8):	File::Remove - usuwanie plików i katalogów
 Name:		perl-File-Remove
